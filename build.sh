@@ -79,7 +79,7 @@ if [[ $DEVICE = floral ]]; then
     cp out/arch/arm64/boot/{dtbo.img,Image.lz4} "$ROOT_DIR/device/google/coral-kernel"
     cp out/arch/arm64/boot/dts/google/qcom-base/sm8150.dtb "$ROOT_DIR/device/google/coral-kernel"
     cp out/arch/arm64/boot/dts/google/qcom-base/sm8150-v2.dtb "$ROOT_DIR/device/google/coral-kernel"
-else if [[ $DEVICE = sunfish ]]; then
+elif [[ $DEVICE = sunfish ]]; then
     cp out/arch/arm64/boot/{dtbo.img,Image.lz4} "$ROOT_DIR/device/google/sunfish-kernel"
     cp out/arch/arm64/boot/dts/google/qcom-base/sdmmagpie.dtb "$ROOT_DIR/device/google/sunfish-kernel"
 fi
